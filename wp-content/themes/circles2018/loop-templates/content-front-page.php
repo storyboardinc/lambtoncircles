@@ -38,7 +38,7 @@
 			<button type="button" href="read-more" class="btn btn-danger btn-lg">Learn More</button>
 			</div>
 			<div class="col-12 col-md-6">
-			<img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/Gayle-Kim.jpg">
+			<img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/Gayle-Kim.jpg">
 			<br>
 			<span class="text-center">Circles® Canada Team Gayle Montgomery & Kim Godin</span>
 			</div>
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="col-12">
 					<h2 class="text-center">WHAT WE DO</h2>
-					<p><img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/image4.jpeg" style="height:auto; width: 250px;" class="full-circle">Circles® Canada is a poverty alleviation strategy working to build relationships across socio-economic classes to empower people and communities to thrive! Our model focuses on three strategies for people in poverty: crisis management and stabilization; education, job placement and job retention; advancement and economic stability.</p>
+					<p><img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/image4.jpeg" style="height:auto; width: 250px;" class="full-circle">Circles® Canada is a poverty alleviation strategy working to build relationships across socio-economic classes to empower people and communities to thrive! Our model focuses on three strategies for people in poverty: crisis management and stabilization; education, job placement and job retention; advancement and economic stability.</p>
 				</div>
 			</div>
 		</div>
@@ -69,7 +69,7 @@
 		<div class="row">
 			<div class="col-12">
 				<p class="lg-text">Circles® is a collaborative committed to the elimination of poverty in our community in our lifetime by exploiting the power of a caring community working together. Everyone needs enough relationships, resources and reasons to thrive.</p>
-				<img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/Lambton-Circles-Team.jpg"><br>
+				<img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/Lambton-Circles-Team.jpg"><br>
 				<span class="sm-caption">Back Row L-R: Gayle Montgomery, Martine Creasor, Kelly Chappell Finch - Front Row L-R: Mary Lou Robb, Kim Godin</span>
 				<p class="lg-text">In 2009 Lambton County launched the 1st Circles® Initiative in Canada. Based on its tremendous success,  Circles® is expanding rapidly across Canada.</p>
 			</div>
@@ -83,7 +83,7 @@
 				<div class="col-12">
 					<p class="lg-text">“Circles isn’t just an organization, we’re a family” – Carrie, Circle Leader</p>
 					<br>
-					<img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/supportandsocial.png">
+					<img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/supportandsocial.png">
 				</div>
 			</div>
 		</div>
