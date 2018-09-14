@@ -16,7 +16,7 @@
 		<div class="row">
 
 			<div class="col-3">
-				<img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/CIRCLES-Canada-Small-e1536607259769.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/CIRCLES-Canada-Small-e1536607259769.jpg">
 			</div><!--col end -->
 			
 			<div class="col-6 text-center">
@@ -27,7 +27,7 @@
 			</div><!--col end -->
 			
 			<div class="col-3">
-				<img src="https://circlescanada-aaronrobb.c9users.io/wp-content/uploads/2018/09/LambtonCountyLogoRGB-300x300-e1536607276964.jpg">
+				<img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/LambtonCountyLogoRGB-300x300-e1536607276964.jpg">
 			</div><!--col end -->
 
 		</div><!-- row end -->
