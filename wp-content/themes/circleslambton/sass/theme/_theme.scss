@@ -1,0 +1,432 @@
+// SCSS Syntax http://sass-lang.com/documentation/file.SASS_REFERENCE.html#css_extensions
+
+// variable declaration in SCSS we use variables to keep style clean and easy to modify
+// if we use this variable to say 50 rules and want to change the color, we would change only this variable.
+$blue: rgb(75, 106, 136);
+$grey: #2a2f49;
+$darkgrey: #717171;
+$brandblue: #3788c7;
+
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+.admin-bar .fixed-top {
+  top: 32px;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.sm-caption {
+  font-size: 14px;
+}
+
+.lg-text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.wrapper {
+  padding: 60px 0;
+  margin-top: 50px;
+}
+
+.h3, h3 {
+    font-size: 1.4rem;
+}
+
+a {
+  color: #00a9d1;
+}
+
+a:hover {
+  color: #034858;
+}
+
+.small {
+  font-size: 0.8rem;
+  color: #9e9e9e;
+}
+
+// in SCSS we nest
+.topnav {
+  background: #fff;
+  nav {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    .navbar {
+      padding: 0;
+    }
+    // in CSS this was selected by nav a
+    a {
+      color: #1a1a1a;
+      font-weight: 500;
+      padding: 0 18px;
+      display: block;
+      font-size: 0.8rem;
+      // change a on hover example
+      // in CSS this was selected by nav a:hover
+      &:hover {
+        color: #00a9d1;
+      }
+    }
+    .navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+      -webkit-transition: all 0.1s ease;
+     transition: all 0.1s ease;
+     transition-timing-function: ease;
+     -webkit-backface-visibility: hidden;
+     margin-right: 0.1rem;
+     padding: 0;
+     a {
+       padding: 0;
+     }
+    }
+    .navbar-brand.shrink {
+      width: 0;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all 0.1s ease;
+      transition: all 0.1s ease;
+      transition-timing-function: ease;
+      -webkit-backface-visibility: hidden;
+    }
+    .social-icons {
+      margin-bottom: 0;
+      margin-left: 20px;
+      a {
+        color: #000;
+        padding: 0 5px;
+        display: inline;
+      }
+    }
+  }
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin: 0;
+}
+
+.topnav {
+   // Animation
+   -webkit-transition: all 0.9s ease;
+   transition: all 0.9s ease;
+   transition-timing-function: ease;
+}
+
+.topnav.shrink {
+  .navbar-brand {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.9s linear;
+    -webkit-transition: all 0.9s ease;
+    width: 0;
+    padding: 0;
+  }
+  .navbar-brand.shrink {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.9s linear;
+    -webkit-transition: all 0.9s ease;
+  }
+  .page-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.9s linear;
+  -webkit-transition: all 0.9s ease;
+  height: 0;
+  }
+}
+
+
+.page-top {
+  height: 40px;
+  line-height: 40px;
+  //background: #f4f4f4;
+  color: #1a1a1a;
+  //overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  transition-timing-function: ease;
+  visibility: visible;
+  opacity: 1;
+  width: 350px;
+  padding: 0 20px;
+  float: right;
+  z-index: 9999;
+  position: relative;
+  margin-bottom: -20px;
+  img {
+    height: 28px;
+    width: auto;
+    margin-top: -2px;
+  }
+  .floating {
+    background: #4b6a88;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.top-nav-wrap {
+  margin-top: 20px;
+}
+
+.page-top .container-fluid, .topnav .container-fluid {
+      padding: 0 60px;
+}
+
+.top-space {
+  margin-top: 160px;
+}
+
+.blue-bg {
+  background: $blue;
+  color: #fff;
+  padding: 50px;
+  h2 {
+     font-size: 2rem;
+     margin-bottom: 1.5rem;
+  }
+  p {
+    font-family: 'Arimo';
+    font-weight: normal;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  span {
+    display: block;
+  }
+  img {
+    border-radius: 45px;
+  }
+}
+
+.angle-seperator {
+    height: 200px;
+    background: #4b6a88;
+    padding: 0;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.col-12 {
+  padding: 0;
+}
+
+.col-12.col-md-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: $brandblue;
+    border-color: $brandblue;
+}
+  
+
+.white-bg {
+  background: #fff;
+  color: $grey;
+  padding: 50px 50px 150px;
+  font-size: 24px;
+  line-height: 1.88;
+    h2 {
+     font-size: 2rem;
+     margin-bottom: 1.5rem;
+  }
+  .full-circle {
+    float: left;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+}
+
+.front-blog {
+ .front-blog-image {
+   height: 250px;
+  overflow: hidden;
+  margin-bottom: 10px;
+ }
+ .col-md-4 {
+   padding: 0 20px !important;
+ }
+ img {
+   margin: 0 auto;
+   display: block;
+ }
+ a {
+   color: $darkgrey;
+ }
+ h3 {
+   margin-bottom: 0px;
+ }
+ .btn {
+   background: $brandblue;
+   color: #fff;
+ }
+}
+
+.footer {
+  border-top: 25px solid $blue;
+  padding: 40px 0 0;
+  .footer-bar {
+    background: #EDEDED;
+    padding: 20px 0;
+  }
+  .footer-logos {
+    img {
+      height: 220px;
+      width: auto;
+    }
+  }
+}
+
+.page .entry-header, .single .entry-header {
+    background: #4b6a88;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    a {
+      color: #fff;
+    }
+}
+
+.page, .single, .blog {
+ .sub-header {
+    padding: 30px 0;
+    border-bottom: 1px solid #f1f2f2;
+    border-top: 1px solid #f1f2f2;
+    position: relative;
+    font-size: inherit;
+    background-color: #fff;
+    .entry-title {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    }
+    .container-fluid {
+      padding: 0 60px;
+    }
+    .breadcrumbs {
+      font-size: 12px;
+      a {
+      color: #a5a5a5;
+      text-transform: uppercase;
+      }
+      .breadcrumb_last {
+        color: #6d6e71;
+        text-transform: uppercase;
+      }
+    }
+ }
+}
+
+.home .sub-header {
+  display: none;
+}
+
+.single {
+  .entry-header {
+    margin-bottom: 30px;
+  }
+}
+
+.blog article {
+  margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    padding: 0;
+  }
+.topnav .container-fluid {
+      padding: 0;
+}
+.page-top {
+  text-align: center;
+}
+.navbar {
+  padding: .5rem 0rem;
+}
+.navbar-brand {
+  margin-right: 0;
+}
+.navbar-nav.ml-auto {
+  margin-left: 20px !important;
+  margin-right: 20px;
+}
+.h1, h1 {
+    font-size: 1.5rem;
+}
+.h2, h2 {
+    font-size: 1.5rem;
+}
+.banner-header {
+  margin-bottom: 20px;
+}
+.blog .sub-header .container-fluid, .page .sub-header .container-fluid, .single .sub-header .container-fluid {
+    padding: 0px;
+}
+.footer .footer-logos img {
+    height: auto;
+    width: 100%;
+}
+.home-video {
+  display: none;
+}
+.col-12 {
+  margin-bottom: 30px;
+}
+.white-bg {
+    font-size: 20px;
+    line-height: 1.5;
+    .full-circle {
+    margin: 0 auto;
+    display: block;
+    float: none;
+}
+}
+.navbar-toggler {
+  margin: 0 auto;
+}
+.breadcrumbs {
+  text-align: left !important;
+}
+.blue-bg, .white-bg {
+  padding: 30px 0;
+}
+}
